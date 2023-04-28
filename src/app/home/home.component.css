@@ -1,13 +1,6 @@
-/*.bg-image{*/
-/*  background-image: url('/assets/images/designer_1.png');*/
-/*  background-repeat: no-repeat;*/
-/*  background-position: 100px 100px;*/
-/*  width: 100%;*/
-/*}*/
-
 .bg-image{
   background-image: url('/assets/images/designer_1.png');
-  background-position: 32rem 0;
+  background-position: top right;
   background-repeat: no-repeat !important;
   height: 100%;
   position: absolute;
