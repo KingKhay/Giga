@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-banner-left-subsection',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner-left-subsection.component.css']
 })
 export class BannerLeftSubsectionComponent {
-
+ @Input() title: string = '';
 }
