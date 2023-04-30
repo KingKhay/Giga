@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Info} from "./model/Info";
 
 @Component({
   selector: 'app-info',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class InfoComponent {
 
+  @Input() data!: Info;
 }

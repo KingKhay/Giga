@@ -1,1 +1,10 @@
-<p>info works!</p>
+<div class="flex justify-center items-center max-w-screen-xl mx-auto my-20">
+  <div class="basis-2/4 flex items-center justify-center">
+    <img src="{{data.svgUrl}}" alt="info svg" class="object-contain h-auto">
+  </div>
+  <div class="basis-2/4">
+    <h2 class="text-[36px] font-bold mb-7">{{data.title}}</h2>
+    <p class="text-[18px] mb-10">{{data.description}}</p>
+    <app-button *ngIf="data.hasButton" [title]="'Order Now'"></app-button>
+  </div>
+</div>
