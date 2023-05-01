@@ -1,0 +1,7 @@
+.bg-image-price{
+  background-image: url('/assets/images/Rectangle.png');
+  background-repeat: no-repeat !important;
+  background-size: cover;
+  min-height: 80vh;
+  min-width: 100%;
+}
