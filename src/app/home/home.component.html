@@ -1,7 +1,7 @@
 <div class="bg-image">
   <app-header></app-header>
   <app-hero></app-hero>
+  <app-banner></app-banner>
+  <app-info *ngFor="let info of infoData" [data]="info"></app-info>
+  <app-price-info></app-price-info>
 </div>
-<app-banner></app-banner>
-<app-info *ngFor="let info of infoData" [data]="info"></app-info>
-<app-price-info></app-price-info>

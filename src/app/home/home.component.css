@@ -2,7 +2,6 @@
   background-image: url('/assets/images/designer_1.png');
   background-position: top right;
   background-repeat: no-repeat !important;
-  background-size: contain;
-  min-height: 100vh;
-  min-width: 70vw;
+  height: 120%;
+  width: 100%;
 }
