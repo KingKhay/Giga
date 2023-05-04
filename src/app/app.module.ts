@@ -10,6 +10,9 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { ButtonComponent } from './shared/button/button.component';
 import { BannerComponent } from './home/banner/banner.component';
 import { BannerLeftSubsectionComponent } from './home/banner/banner-left-subsection/banner-left-subsection.component';
+import { InfoComponent } from './home/info/info.component';
+import { PriceInfoComponent } from './home/price-info/price-info.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { BannerLeftSubsectionComponent } from './home/banner/banner-left-subsect
     NavbarComponent,
     ButtonComponent,
     BannerComponent,
-    BannerLeftSubsectionComponent
+    BannerLeftSubsectionComponent,
+    InfoComponent,
+    PriceInfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
