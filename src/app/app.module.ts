@@ -13,6 +13,8 @@ import { BannerLeftSubsectionComponent } from './home/banner/banner-left-subsect
 import { InfoComponent } from './home/info/info.component';
 import { PriceInfoComponent } from './home/price-info/price-info.component';
 import { FooterComponent } from './home/footer/footer.component';
+import {MaterialModule} from "./material.module";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { FooterComponent } from './home/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
