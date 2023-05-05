@@ -2,10 +2,10 @@
   <div class="basis-2/4 flex items-center justify-center">
     <img src="{{data.svgUrl}}" alt="info svg" class="object-contain h-auto w-full">
   </div>
-  <div class="basis-2/4">
-    <h1 class="mb-7">{{data.title}}</h1>
-    <p class="text-[18px] mb-10">{{data.description}}</p>
-    <p class="mb-10 text-[18px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+  <div class="basis-2/4 flex flex-col justify-center items-start gap-y-3">
+    <p class="font-bold text-2xl">{{data.title}}</p>
+    <p class="text-[18px] font-light">{{data.description}}</p>
+    <p class="text-[18px] font-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
     <app-button *ngIf="data.hasButton" [title]="'Order Now'"></app-button>
   </div>
 </div>
