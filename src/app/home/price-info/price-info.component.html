@@ -1,11 +1,17 @@
-<div class="bg-image-price w-full flex flex-col justify-center items-center">
-  <h1 class="text-[#EA0A8E] text-4xl font-bold md:mt-20">A Price To Suit Everyone</h1>
-  <p class="text-[16px] w-2/5 mt-5 mb-10 text-center">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-  </p>
-  <h2 class="text-[50px] text-[#EA0A8E] font-bold">$40</h2>
-  <span class="text-[16px] mb-10">Monthly Subscription</span>
-  <p class="text-[#5D6970] text-[14px] mb-5">See, One Price. Simple.</p>
-  <app-button [title]="'Order Now'"></app-button>
+<div class="bg-image-price flex flex-col justify-center items-center gap-y-12">
+  <div>
+    <h1 class="text-[#EA0A8E] text-4xl text-center">A Price To Suit Everyone</h1>
+    <p class="text-[16px] text-center max-w-2xl">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+    </p>
+  </div>
+  <div class="flex flex-col justify-center items-center gap-y-2">
+    <p class="text-[2.5rem] text-[#EA0A8E] font-bold">$40</p>
+    <span class="text-[16px]">Monthly Subscription</span>
+  </div>
+  <div class="flex flex-col justify-center items-center">
+    <p class="text-[#5D6970] text-[14px]">See, One Price. Simple.</p>
+    <app-button [title]="'Order Now'"></app-button>
+  </div>
 </div>

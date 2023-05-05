@@ -3,9 +3,9 @@
     <img src="{{data.svgUrl}}" alt="info svg" class="object-contain h-auto w-full">
   </div>
   <div class="basis-2/4">
-    <h2 class="text-[36px] font-bold mb-7">{{data.title}}</h2>
+    <h1 class="mb-7">{{data.title}}</h1>
     <p class="text-[18px] mb-10">{{data.description}}</p>
-    <p class="mb-10">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+    <p class="mb-10 text-[18px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
     <app-button *ngIf="data.hasButton" [title]="'Order Now'"></app-button>
   </div>
 </div>
