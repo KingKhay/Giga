@@ -1,4 +1,6 @@
 import {Component, Input} from '@angular/core';
+import {MatDialog} from "@angular/material/dialog";
+import {DialogFormComponent} from "../dialog-form/dialog-form.component";
 
 @Component({
   selector: 'app-button',
@@ -8,4 +10,11 @@ import {Component, Input} from '@angular/core';
 export class ButtonComponent {
 
   @Input() title: string = '';
+
+  constructor(private dialog: MatDialog) {
+  }
+
+  openForm() {
+    this.dialog.open(DialogFormComponent);
+  }
 }
