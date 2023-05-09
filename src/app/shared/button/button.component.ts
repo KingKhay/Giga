@@ -15,6 +15,9 @@ export class ButtonComponent {
   }
 
   openForm() {
-    this.dialog.open(DialogFormComponent);
+    this.dialog.open(DialogFormComponent, {
+      width: '80%',
+      height: '90%'
+    });
   }
 }
