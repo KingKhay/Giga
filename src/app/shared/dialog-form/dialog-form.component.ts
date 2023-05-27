@@ -7,16 +7,21 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./dialog-form.component.css']
 })
 export class DialogFormComponent implements OnInit {
-  myForm!: FormGroup;
   constructor(private fb: FormBuilder) {
 
   }
   ngOnInit(): void {
-    this.myForm = this.fb.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
-    })
+
+  }
+
+  myForm = this.fb.group({
+    firstName: ['', Validators.required],
+    lastName: ['', Validators.required],
+    email: ['', [Validators.required, Validators.pattern(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)]],
+    password: ['', [Validators.required, Validators.pattern(/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/)]],
+  })
+
+  onSubmit() {
 
   }
 }

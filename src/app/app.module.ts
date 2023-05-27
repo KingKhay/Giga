@@ -15,6 +15,9 @@ import { PriceInfoComponent } from './home/price-info/price-info.component';
 import { FooterComponent } from './home/footer/footer.component';
 import {MaterialModule} from "./material.module";
 import {NgOptimizedImage} from "@angular/common";
+import {DialogFormComponent} from "./shared/dialog-form/dialog-form.component";
+import {InputComponent} from "./shared/input/input.component";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -28,13 +31,16 @@ import {NgOptimizedImage} from "@angular/common";
     BannerLeftSubsectionComponent,
     InfoComponent,
     PriceInfoComponent,
-    FooterComponent
+    FooterComponent,
+    DialogFormComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     NgOptimizedImage,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

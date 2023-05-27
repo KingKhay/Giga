@@ -1,10 +1,28 @@
-<form [formGroup]="myForm">
-  <label>Name:</label>
-  <input type="text" formControlName="firstName">
-
-  <label>Email:</label>
-  <input type="text" formControlName="lastName">
-
-  <label>Password:</label>
-  <input type="email" formControlName="email">
-</form>
+<div>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div>
+      <app-input [control]="myForm.controls.firstName"
+                 [placeholder]="'Enter your First Name'"
+                 [type]="'text'"
+                 [id]="'f-name'"
+                 [label]="'First Name'"></app-input>
+      <app-input [control]="myForm.controls.lastName"
+                 [placeholder]="'Enter your Last Name'"
+                 [type]="'text'"
+                 [id]="'l-name'"
+                 [label]="'Last Name'"></app-input>
+    </div>
+    <div>
+      <app-input [control]="myForm.controls.email"
+                 [placeholder]="'Enter your Email'"
+                 [label]="'Email'"
+                 [id]="'email'"
+                 [type]="'text'"></app-input>
+      <app-input [control]="myForm.controls.password"
+                 [placeholder]="'Enter your Password'"
+                 [label]="'Password'"
+                 [id]="'password'"
+                 [type]="'password'"></app-input>
+    </div>
+  </form>
+</div>
