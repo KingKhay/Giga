@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-dialog-form',
@@ -22,6 +22,8 @@ export class DialogFormComponent implements OnInit {
   })
 
   onSubmit() {
-
+    if (this.myForm.invalid){
+      this.myForm.markAllAsTouched();
+    }
   }
 }

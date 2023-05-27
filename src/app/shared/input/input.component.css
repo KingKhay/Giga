@@ -1,0 +1,9 @@
+input{
+  border: 1px solid gray;
+  padding: 5px 5px 5px 20px;
+  width: 100%;
+}
+
+label{
+  width: 100%;
+}

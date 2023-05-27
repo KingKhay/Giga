@@ -1,28 +1,31 @@
-<div>
+<div class="flex items-center justify-center w-full h-full">
   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-    <div>
-      <app-input [control]="myForm.controls.firstName"
-                 [placeholder]="'Enter your First Name'"
-                 [type]="'text'"
-                 [id]="'f-name'"
-                 [label]="'First Name'"></app-input>
-      <app-input [control]="myForm.controls.lastName"
-                 [placeholder]="'Enter your Last Name'"
-                 [type]="'text'"
-                 [id]="'l-name'"
-                 [label]="'Last Name'"></app-input>
-    </div>
-    <div>
-      <app-input [control]="myForm.controls.email"
-                 [placeholder]="'Enter your Email'"
-                 [label]="'Email'"
-                 [id]="'email'"
-                 [type]="'text'"></app-input>
-      <app-input [control]="myForm.controls.password"
-                 [placeholder]="'Enter your Password'"
-                 [label]="'Password'"
-                 [id]="'password'"
-                 [type]="'password'"></app-input>
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <div class="flex items-center justify-center basis-2/4 gap-x-3 gap-y-3 w-full p-5">
+        <app-input [control]="myForm.controls.firstName"
+                   [placeholder]="'Enter your First Name'"
+                   [type]="'text'"
+                   [id]="'f-name'"
+                   [label]="'First Name'"></app-input>
+        <app-input [control]="myForm.controls.lastName"
+                   [placeholder]="'Enter your Last Name'"
+                   [type]="'text'"
+                   [id]="'l-name'"
+                   [label]="'Last Name'"></app-input>
+      </div>
+      <div class="flex items-center justify-center basis-2/4 gap-x-3 gap-y-3 w-full p-5">
+        <app-input [control]="myForm.controls.email"
+                   [placeholder]="'Enter your Email'"
+                   [label]="'Email'"
+                   [id]="'email'"
+                   [type]="'text'"></app-input>
+        <app-input [control]="myForm.controls.password"
+                   [placeholder]="'Enter your Password'"
+                   [label]="'Password'"
+                   [id]="'password'"
+                   [type]="'password'"></app-input>
+      </div>
+      <button type="submit" [disabled]="myForm.invalid" class="py-3 px-10 bg-[#EA0A8E] rounded cursor-pointer text-white">Sign Up</button>
     </div>
   </form>
 </div>
